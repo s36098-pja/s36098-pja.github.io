@@ -90,8 +90,7 @@ nav a:hover::after {
 }
 
 .blok1 {
-       height: 700px;
-        background: url('lilith.jpg') center/cover no-repeat;
+        min-height: 700px;
         background-color: #1a0505;
         display:flex;
         flex-grow: 1;
@@ -100,8 +99,11 @@ nav a:hover::after {
         align-items: center;
         text-align: center;
         padding: 30px;
-        border-bottom: 1px solid rgba(195, 158, 92, 0.2);
-        
+        border-bottom: 1px solid rgba(195, 158, 92, 0.2);    
+}
+
+.bg-lilith {
+          background: url('lilith.jpg') center top/cover no-repeat;
 }
 
 .blok1 {
@@ -109,8 +111,15 @@ nav a:hover::after {
          text-transform: uppercase;
          letter-spacing: 6px;
          color: #ffffff;
-         text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red
-        
+         text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red    
+}
+.blok1 p {
+    font-size: 40px;
+         text-transform: uppercase;
+         letter-spacing: 6px;
+         color: #ffffff;
+         text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red 
+
 }
 
 .sekcja-info {
@@ -401,7 +410,6 @@ nav a:hover::after {
 .banner-lore {
         width: 100%;
         height: 700px;
-        background: url('lore.jpg') center/cover no-repeat;
         background-color: #1a0505; 
         display:flex;
         flex-direction: column;
@@ -411,7 +419,10 @@ nav a:hover::after {
         padding: 20px;
         border-bottom: 1px solid rgba(195, 158, 92, 0.2);
         padding-top: 300px;
-    
+}
+
+.bg-lore {
+    background: url('lore.jpg') center top/cover no-repeat;
 }
 
 .lore-tekst {
@@ -422,7 +433,6 @@ nav a:hover::after {
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
     margin-bottom: 15px;
     text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red;
-    padding-bottom:  200px;
 
 }
 
@@ -673,7 +683,7 @@ nav a:hover::after {
 
 .panoramic-lore {
     width: 100%;
-    background:url('pieklo.jpg') center/cover no-repeat;
+    background:url('pieklo.jpg') center top/cover no-repeat;
     background-attachment: fixed;
     padding: 200px 0;
 
@@ -731,8 +741,7 @@ nav a:hover::after {
 
 .banner-klasy {
         width: 100%;
-        height: 700px;
-        background: url(./tloklasy.jpg) center/cover no-repeat;
+        min-height: 700px;
         background-color: #1a0505; 
         display:flex;
         flex-direction: column;
@@ -741,8 +750,10 @@ nav a:hover::after {
         text-align: center;
         padding: 20px;
         border-bottom: 1px solid rgba(195, 158, 92, 0.2);
-        padding-top: 300px;
+}
 
+.bg-tloklasy {
+    background: url(./tloklasy.jpg) center top/cover no-repeat;
 }
 
 .banner-klasy h1 {
@@ -834,7 +845,7 @@ nav a:hover::after {
 .sekcja-prezentacja-klas {
     width: 100%;
     background-color: #050405;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 
