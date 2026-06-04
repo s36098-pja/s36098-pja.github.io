@@ -9,29 +9,45 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(to bottom, rgba(10, 8, 10, 0.95),rgba(5, 4, 5, 0.95));
+    background: linear-gradient(to bottom, rgba(10, 8, 10, 0.95), rgba(5, 4, 5, 0.95));
     border-bottom: 2px solid rgba(218, 165, 32, 1);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     padding: 20px 0;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}   
+}
+
+header .glowne-logo-header {
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .glowne-logo-header img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
 
 body {
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(110, 0, 0));
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
     height: 100%;
     width: auto;
 
 }
 
 .nav-menu {
-max-width: 70%;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-bottom: 0px;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
 
 }
 
@@ -67,7 +83,8 @@ nav a {
     padding: 5px 0;
 }
 
-nav a:hover, nav a.active {
+nav a:hover,
+nav a.active {
     color: goldenrod;
     text-shadow: 0 0 8px goldenrod
 }
@@ -90,36 +107,36 @@ nav a:hover::after {
 }
 
 .blok1 {
-        min-height: 700px;
-        background-color: #1a0505;
-        display:flex;
-        flex-grow: 1;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 30px;
-        border-bottom: 1px solid rgba(195, 158, 92, 0.2);    
+    min-height: 700px;
+    background-color: #1a0505;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(195, 158, 92, 0.2);
 }
 
 .bg-lilith {
-          background: url('lilith.jpg') center top/cover no-repeat;
+    background: url('lilith.jpg') center top/cover no-repeat;
 }
 
 .blok1 {
-        font-size: 48px;
-         text-transform: uppercase;
-         letter-spacing: 6px;
-         color: #ffffff;
-         text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red    
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 10px red
 }
+
 .blok1 p {
     font-size: 40px;
-         text-transform: uppercase;
-         letter-spacing: 6px;
-         color: #ffffff;
-         text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red 
-
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 10px red
 }
 
 .sekcja-info {
@@ -180,7 +197,7 @@ nav a:hover::after {
 
 .kolumna h3 {
     font-size: 20px;
-    color:rgb(177, 154, 97);
+    color: rgb(177, 154, 97);
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -198,7 +215,6 @@ nav a:hover::after {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
-
 }
 
 .sekcja-glowna-info {
@@ -222,6 +238,15 @@ nav a:hover::after {
     flex: 2;
     min-width: 320px;
 
+}
+
+.fabula-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 4px;
+    border: solid
 }
 
 .glowny-tekst-opis h2 {
@@ -281,7 +306,7 @@ nav a:hover::after {
 }
 
 .metryka-gry ul li strong {
-    color:rgb(177, 154, 97);
+    color: rgb(177, 154, 97);
     display: inline-block;
     width: 100px;
 }
@@ -296,7 +321,7 @@ nav a:hover::after {
 
 .naglowek-centrowany {
     font-size: 36px;
-    color:rgb(177, 154, 97);
+    color: rgb(177, 154, 97);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -370,7 +395,7 @@ nav a:hover::after {
 }
 
 .karta-filaru:hover h3 {
-    color:rgb(177, 154, 97);
+    color: rgb(177, 154, 97);
 
 }
 
@@ -383,14 +408,19 @@ nav a:hover::after {
 }
 
 @media (max-width: 992px) {
-    .uklad-dwukolumnowy, .uklad-trzykolumnowy {
+
+    .uklad-dwukolumnowy,
+    .uklad-trzykolumnowy {
         gap: 30px;
     }
-    .glowny-tekst-opis, .metryka-gry {
+
+    .glowny-tekst-opis,
+    .metryka-gry {
         flex: 1 1 100%;
     }
+
     .blok1 {
-        padding-top:300px;
+        padding-top: 300px;
     }
 }
 
@@ -408,17 +438,17 @@ nav a:hover::after {
 
 
 .banner-lore {
-        width: 100%;
-        height: 700px;
-        background-color: #1a0505; 
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        border-bottom: 1px solid rgba(195, 158, 92, 0.2);
-        padding-top: 300px;
+    width: 100%;
+    height: 700px;
+    background-color: #1a0505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(195, 158, 92, 0.2);
+    padding-top: 300px;
 }
 
 .bg-lore {
@@ -432,7 +462,7 @@ nav a:hover::after {
     letter-spacing: 6px;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
     margin-bottom: 15px;
-    text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 10px red;
 
 }
 
@@ -513,16 +543,18 @@ nav a:hover::after {
 
 
 @media (max-width: 768px) {
-    .uklad-szachownica, .rzad-prawy .uklad-szachownica {
+
+    .uklad-szachownica,
+    .rzad-prawy .uklad-szachownica {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .grafika-lore {
         height: auto;
         max-height: 280px;
     }
-    
+
     .kontener-tekstu h2 {
         font-size: 24px;
         text-align: center;
@@ -531,54 +563,53 @@ nav a:hover::after {
 
 
 .kontener-tekstu h2 {
-  
-  font-size: 50px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
-  display: block;
-  
 
-  background-image: linear-gradient(
-    90deg,
-    #1a1a1a 0%,
-    #a30000 25%,
-    #ff3300 50%,
-    #a30000 75%,
-    #1a1a1a 100%
-  );
-  
-  
-  background-size: 400% 100%;
-  
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-  
- 
-  color: transparent;
-  
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: block;
 
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9))
-          drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
-  
 
-  animation: diabloSmokeText 6s infinite linear;
+    background-image: linear-gradient(90deg,
+            #1a1a1a 0%,
+            #a30000 25%,
+            #ff3300 50%,
+            #a30000 75%,
+            #1a1a1a 100%);
+
+
+    background-size: 400% 100%;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
 }
 
 
 @keyframes diabloSmokeText {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-  
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
 
 .sekcja-regiony {
@@ -590,38 +621,76 @@ nav a:hover::after {
 }
 
 .naglowek-centrowany {
-     font-size: 60px;
-     text-align: center;
+    font-size: 60px;
+    text-align: center;
     text-shadow: 0 0 10px rgba(200, 0, 0);
     letter-spacing: 3px;
+    zoom: 108%;
 
 }
 
 .podnaglowek {
     font-size: 28px;
     text-align: center;
-  
+
 
 }
- 
+
+.mapa-diablo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.1);
+    height: 400px;
+    width: 100%;
+
+}
+
+.mapa-diablo img {
+    width: 443px;
+    height: 331px;
+    display: block;
+}
+
+
 
 
 .siatka-regionów {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 15px;
     margin-top: 100px;
+    zoom: 70%;
 
 }
 
 
-.karta-regionu {
+.karta-regionu1 {
     background-color: #1b0909;
     border: 1px solid rgba(255, 255, 255, 0.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
+.karta-regionu2 {
+    background-color: #1b0909;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.karta-regionu3 {
+    background-color: #1b0909;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.karta-regionu4 {
+    background-color: #1b0909;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
@@ -630,7 +699,6 @@ nav a:hover::after {
     height: 300px;
     overflow: hidden;
     border-bottom: 2px solid rgba(218, 165, 32, 0.1);
-
 }
 
 .foto-regionu img {
@@ -639,7 +707,6 @@ nav a:hover::after {
     overflow: hidden;
     object-fit: cover;
     transition: transform 0.5s ease;
-
 }
 
 
@@ -665,25 +732,103 @@ nav a:hover::after {
 
 }
 
+/*-----------------------------------------------------------------------*/
 
-.karta-regionu:hover {
+.karta-regionu1:hover {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+}
+
+.karta-regionu1:hover .foto-regionu img {
+    transform: scale(1.08);
+}
+
+/*-----------------------------------------------------------------------*/
+
+.karta-regionu2:hover {
     transform: translateY(-8px);
     border-color: rgba(184, 0, 0, 0.5);
     box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
 
 }
 
-
-.karta-regionu:hover .foto-regionu img {
+.karta-regionu2:hover .foto-regionu img {
     transform: scale(1.08);
+}
+
+/*-----------------------------------------------------------------------*/
+
+.karta-regionu3:hover {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
 
 }
 
+.karta-regionu3:hover .foto-regionu img {
+    transform: scale(1.08);
+}
+
+/*-----------------------------------------------------------------------*/
+
+.karta-regionu4:hover {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+
+}
+
+.karta-regionu4:hover .foto-regionu img {
+    transform: scale(1.08);
+}
+
+/*-----------------------------------------------------------------------*/
+
+body:has(.area1:hover) .karta-regionu3 {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+}
+
+body:has(.area1:hover) .karta-regionu3 .foto-regionu img {
+    transform: scale(1.08);
+}
+
+body:has(.area2:hover) .karta-regionu2 {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+}
+
+body:has(.area2:hover) .karta-regionu2 .foto-regionu img {
+    transform: scale(1.08);
+}
+
+body:has(.area3:hover) .karta-regionu1 {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+}
+
+body:has(.area3:hover) .karta-regionu1 .foto-regionu img {
+    transform: scale(1.08);
+}
+
+body:has(.area4:hover) .karta-regionu4 {
+    transform: translateY(-8px);
+    border-color: rgba(184, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(184, 0, 0, 0.15);
+}
+
+body:has(.area4:hover) .karta-regionu4 .foto-regionu img {
+    transform: scale(1.08);
+}
 
 
 .panoramic-lore {
     width: 100%;
-    background:url('pieklo.jpg') center top/cover no-repeat;
+    background: url('pieklo.jpg') center top/cover no-repeat;
     background-attachment: fixed;
     padding: 200px 0;
 
@@ -740,16 +885,16 @@ nav a:hover::after {
 
 
 .banner-klasy {
-        width: 100%;
-        min-height: 700px;
-        background-color: #1a0505; 
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        border-bottom: 1px solid rgba(195, 158, 92, 0.2);
+    width: 100%;
+    min-height: 700px;
+    background-color: #1a0505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(195, 158, 92, 0.2);
 }
 
 .bg-tloklasy {
@@ -757,24 +902,24 @@ nav a:hover::after {
 }
 
 .banner-klasy h1 {
-   font-size: 48px;
+    font-size: 48px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 6px;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
     margin-bottom: 15px;
-    text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 10px red;
 }
 
 .banner-klasy p {
-     font-size: 40px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 6px;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
     margin-bottom: 15px;
-    text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px red;
-    padding-bottom:  200px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 10px red;
+    padding-bottom: 200px;
 }
 
 
@@ -893,31 +1038,28 @@ nav a:hover::after {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 5px;
-    background-image: linear-gradient(
-    90deg,
-    #1a1a1a 0%,
-    #a30000 25%,
-    #ff3300 50%,
-    #a30000 75%,
-    #1a1a1a 100%
-  );
-  
-  
-  background-size: 400% 100%;
-  
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-  
- 
-  color: transparent;
-  
+    background-image: linear-gradient(90deg,
+            #1a1a1a 0%,
+            #a30000 25%,
+            #ff3300 50%,
+            #a30000 75%,
+            #1a1a1a 100%);
 
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9))
-          drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
-  
 
-  animation: diabloSmokeText 6s infinite linear;
+    background-size: 400% 100%;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
 }
 
 .barb h2 {
@@ -926,31 +1068,114 @@ nav a:hover::after {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 5px;
-    background-image: linear-gradient(
-    90deg,
-    #0d2a68 0%,
-    #a30000 25%,
-    #13ca232c 50%,
-    #a30000 75%,
-    #1a1a1a 100%
-  );
-  
-  
-  background-size: 400% 100%;
-  
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-  
- 
-  color: transparent;
-  
+    background-image: linear-gradient(90deg,
+            #ff7b00 0%,
+            #a30000 25%,
+            #ffbb00bd 50%,
+            #a30000 75%,
+            #1a1a1a 100%);
 
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9))
-          drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
-  
+    background-size: 400% 100%;
 
-  animation: diabloSmokeText 6s infinite linear;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
+}
+
+.lotr h2 {
+    font-size: 32px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg,
+            #0d9900d2 0%,
+            #84b946 25%,
+            #005f00e1 50%,
+            #5e834f 75%,
+            #1a1a1a 100%);
+
+    background-size: 400% 100%;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
+}
+
+.sorc h2 {
+    font-size: 32px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg,
+            #008bcc 0%,
+            #3956b4 25%,
+            #003d83bd 50%,
+            #5c4e72 75%,
+            #1a1a1a 100%);
+
+    background-size: 400% 100%;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
+}
+
+.pala h2 {
+    font-size: 32px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg,
+            #ffddbe 0%,
+            #dbdbdb 25%,
+            #a7a49ebd 50%,
+            #4e4e4e 75%,
+            #1a1a1a 100%);
+
+    background-size: 400% 100%;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0px 0px 10px rgba(180, 0, 0, 0.4));
+
+
+    animation: diabloSmokeText 6s infinite linear;
 }
 
 .klasa-tagline {
@@ -1005,7 +1230,7 @@ nav a:hover::after {
     .panel-klasy {
         flex-direction: column;
     }
-    
+
     .lewa-grafika {
         flex: 1 1 auto;
         width: 100%;
@@ -1013,15 +1238,16 @@ nav a:hover::after {
         border-right: none;
         border-bottom: 2px solid rgba(218, 165, 32, 0.15);
     }
-    
+
     .prawa-tresc {
         padding: 25px;
     }
-    
+
     .siatka-ikon-klas {
         gap: 20px;
     }
 }
+
 footer {
     background-color: black;
     color: red;
